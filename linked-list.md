@@ -16,6 +16,12 @@
 https://leetcode.com/problems/reverse-linked-list/
 
 ```python
+def middleNode(self, head: ListNode) -> ListNode:
+    end_of_list = middle_of_list = head
+    while end_of_list and end_of_list.next:
+        end_of_list = end_of_list.next.next
+        middle_of_list = middle_of_list.next
+    return middle_of_list
 
 ```
 
